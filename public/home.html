@@ -1,0 +1,24 @@
+<div ng-controller="MainController">
+	<div class="nav_top">
+		<div class="nav_top_content">
+			<a href="#/home">Home</a>
+			<h3 class="nav_top_brandname">Celebabble</h3>
+			<a href="" ng-click="logOut()" class="nav_top_logout">Logout</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<h2 class="home_greeting">Got gossip, {{logged_userinfo.name}}?</h2>
+		<p class="home_subgreeting">Share a topic or comment.</p>
+		<a href="#/new_question" class="button_addtopic">
+			<button>+ Topic</button>
+		</a>
+		<input id="question_search" type="text" placeholder="Search Topic" ng-model="search.question">
+
+		<div ng-repeat="question in questions | filter:search:strict | orderBy: '-_id'" class="speech">
+			<a href="#/question/{{question.idquestions}}"><p class="bubble_question" ng-bind="question.question"></p></a>
+			<p class="question_answertotal">{{question.counter}} comment(s)</p>
+			<p ng-hide="question._id"></p>
+		</div>
+	</div>
+</div>

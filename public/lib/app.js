@@ -1,0 +1,1 @@
+var blackbeltApp = angular.module('blackbeltApp', ['ngRoute']);

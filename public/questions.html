@@ -1,0 +1,35 @@
+<div ng-controller="MainController">
+	<div class="nav_top">
+		<div class="nav_top_content">
+			<a href="#/home">Home</a>
+			<h3 class="nav_top_brandname">Celebabble</h3>
+			<a href="" ng-click="logOut()" class="nav_top_logout">Logout</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<h5>Welcome, {{logged_userinfo.name}}!</h5>
+		<div class="topic_leftcontent">
+			<h2>{{question.question}}</h2>
+			<h4>{{question.description}}</h4>
+			<textarea rows="5" cols="21" ng-model="new_answer.answer" placeholder="Share your comments"></textarea>
+			<br>
+			<br>
+			<button class="button_cancel"><a href="#/home">Cancel</a></button>
+			<button ng-click="addAnswer()" class="button_submit">Submit</button>
+			<p class="error_msg">{{errors.error_message}}</p>
+		</div>
+
+		<div class="topic_rightcontent">
+			<div class="answer_div" ng-repeat="answer in answers | orderBy: '-likes.length'">
+				<div class="answer_div_sub">
+					<p><b>{{answer.name}} said:</b>  {{answer.answer}}</p>
+					<p class="indent">{{answer.details}}</p>
+					<br>
+				</div>
+				<span class="like_number">{{answer.likes}} likes <button ng-click="addLike(answer.idanswers)" class="like_btn">&hearts;</button></span>
+			</div>
+		</div>
+		
+	</div>
+</div>

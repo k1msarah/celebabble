@@ -1,0 +1,581 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+    font-family:helvetica,arial,verdana;
+    font-weight:lighter;
+    background-color:#E6E6E6;
+}   
+.answer_div{
+    margin-top:30px;
+    width:600px;
+}
+.answer_div_sub{
+    width:450px;
+    display:inline-block;
+}
+.bubble_question{
+    color:black;
+}
+.button_cancel{
+    background-color:#DF7401;
+    border:1px solid black;
+    border-radius:5px;
+    color:white;
+    padding:8px;
+    font-size:10pt;
+    box-shadow:2px 2px 4px #888;
+}
+.button_cancel a{
+    color:white; 
+    font-size:10pt;
+    text-decoration:none;
+    background-color:transparent;
+}
+.button_addtopic{
+    display:inline-block;
+}
+.button_addtopic button{
+    background-color:#2E64FE;
+    color:white;
+    border-radius:5px;
+    border:1px solid #0B3861;
+    padding:5px;
+    box-shadow:2px 2px 4px #888;
+}
+.button_submit{
+    background-color:#2E64FE;
+    border:1px solid black;
+    border-radius:5px;
+    color:white; 
+    font-size:10pt;
+    padding:8px;
+    margin-left:112px;
+    box-shadow:2px 2px 4px #888;
+}
+.button_submit2{
+    background-color:#2E64FE;
+    border:1px solid black;
+    border-radius:5px;
+    color:white; 
+    font-size:10pt;
+    padding:8px;
+    margin-left:400px;
+    box-shadow:2px 2px 4px #888;
+}
+.error_msg{
+    color:red;
+}
+.home_greeting{
+    color:#0431B4;
+    text-align:center;
+    font-weight:bold;
+    font-size:20pt;
+    margin-bottom:0px;
+}
+.home_subgreeting{
+    text-align:center;
+}
+input{
+    margin:10px 0px;
+    padding:5px;
+    display:block;
+    background-color:white;
+}
+.input_newtopic{
+    width:512px;
+}
+.like_btn{
+    background-color:#0174DF;
+    border:1px solid black;
+    border-radius:5px;
+    color:white;
+    padding-right:8px;
+    padding-left:8px;
+    font-size:14pt;
+    box-shadow:2px 2px 4px #888;
+}
+.like_number{
+    display:inline-block;
+    vertical-align:top;
+    margin-top:15px;
+    margin-left:50px;
+}
+.like_number button{
+    margin-left:10px;
+}
+#login{
+    width:300px;
+    margin:100px auto;
+    text-align:center;
+    padding-top:100px;
+    background-color:transparent;
+}
+#login h1{
+    font-family:georgia,serif;
+    font-size:45pt;
+    color:#F0B70B;
+    font-weight:bolder;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    0px 1px 0 #000,
+    1px 0px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000;
+}
+#login input{
+    width:250px;
+    margin-left:20px;
+    padding:5px;
+    text-align:center;
+}
+#login button{
+    width:265px;
+    margin-left:4px;
+    padding:5px;
+    background-color:#2E64FE;
+    border:1px solid #2E2EFE;
+    color:white;
+}
+.nav_top{
+    background-color:#2E2E2E;
+}
+.nav_top_brandname{
+    background-color:transparent;
+    display:inline-block;
+    margin-left:375px;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family:georgia,serif;
+    font-size:20pt;
+    color:#DBA901;
+    font-weight:bolder;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    0px 1px 0 #000,
+    1px 0px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000;
+}
+.nav_top_content{
+    width:1000px;
+    padding:10px 0px;
+    margin:0px auto;
+    background-color:transparent;
+}
+.nav_top_content a{
+    background-color:transparent;
+    text-decoration:none;
+    color:white;
+}
+.nav_top_logout{
+    margin-left:375px;
+}
+.question_answertotal{
+    font-size:9pt;
+}
+#question_search{
+    margin-left:650px;
+    display:inline-block;
+}
+.speech{
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+    width: 175px;
+    margin-top:20px;
+    margin-bottom:80px;
+    margin-right:30px;
+    text-align: center;
+    padding:15px 15px;
+    height:100px;
+
+    background-color: #fff;
+    border: 5px solid #0B3861;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+}
+.speech a{
+    background-color:transparent;
+    text-decoration:none;
+}
+.speech:after{
+    content: ' ';
+    position: absolute;
+    vertical-align:top;
+    width: 0;
+    height: 0;
+    left: 36px;
+    top: 130px;
+    border: 18px solid;
+    border-color: #fff transparent transparent #fff;
+}
+.speech:before{
+    content: ' ';
+    position: absolute;
+    vertical-align:top;
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 130px;
+    border: 25px solid;
+    border-color: #0B3861 transparent transparent #0B3861;
+}
+.speech p{
+    margin:0px;
+    padding:0px 0px 10px 0px;
+    background-color:transparent;
+}
+.success_msg{
+    color:green;
+}
+table{
+    margin:20px 0px;
+}
+table, thead, tbody, tr, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:5px;
+}
+textarea{
+  padding:5px;
+  background-color:white;
+}
+thead{
+    background-color:#CEE3F6;
+}
+.topic_form{
+    margin-left:230px;
+    margin-top:40px;
+}
+.topic_leftcontent{
+    display:inline-block;
+    width:300px;
+    min-height:500px;
+}
+.topic_leftcontent h2{
+    color:#0431B4;
+    font-weight:bolder;
+    margin-bottom:0px;
+}
+.topic_leftcontent h4{
+    margin-top:10px;
+    font-weight:bolder;
+}
+.topic_leftcontent h5{
+    margin-top:60px;
+}
+.topic_rightcontent{
+    display:inline-block;
+    margin-left:70px;
+    vertical-align:top;
+    width:600px;
+}
+tr:nth-child(even){
+    background-color:#E6E6E6;
+}
+.wrapper{
+    width:1000px;
+    margin:10px auto;
+}
+.wrapper_login{
+    margin:10px auto;
+    background:url('../img/laptop.png') no-repeat;
+    width:1000px;
+    height:535px;
+    background-size:cover;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

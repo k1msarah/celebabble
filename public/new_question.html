@@ -1,0 +1,25 @@
+<div ng-controller="MainController">
+	<div class="nav_top">
+		<div class="nav_top_content">
+			<a href="#/home">Home</a>
+			<h3 class="nav_top_brandname">Celebabble</h3>
+			<a href="" ng-click="logOut()" class="nav_top_logout">Logout</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<h5>Welcome, {{logged_userinfo.name}}!</h5>
+		<h2 class="home_greeting">New Topic</h2>
+		<p class="home_subgreeting">Start a new conversation.</p>
+			<div class="topic_form">
+				<input type="text" placeholder="Topic" ng-model="new_question.question" class="input_newtopic">
+				<textarea rows="5" cols="50" ng-model="new_question.description" placeholder="Description"></textarea>
+				<br>
+				<br>
+				<button class="button_cancel"><a href="#/home">Cancel</a></button>
+				<button ng-click="addQuestion(logged_userinfo)" class="button_submit2">Submit</button>
+				<p class="success_msg">{{success.success_message}}</p>
+				<p class="error_msg">{{errors.error_message}}</p>
+			</div>
+	</div>
+</div>
