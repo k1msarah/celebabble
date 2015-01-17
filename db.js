@@ -7,12 +7,12 @@ exports.setupDBAndTable = function (conn) {
 
     // If no environment variable: 
     if (!process.env.VCAP_SERVICES) {
-        connection.query('CREATE DATABASE IF NOT EXISTS celebabble_db;', function (err) {
+        connection.query('CREATE DATABASE IF NOT EXISTS heroku_7d08f208a1d0c14;', function (err) {
             if (err)  return console.log(err);
         });
 
         //Switch to 'celebabble_db' database
-        connection.query('USE  celebabble_db;', function (err) {
+        connection.query('USE  heroku_7d08f208a1d0c14;', function (err) {
             if (err)  return console.log(err);
         });
     }

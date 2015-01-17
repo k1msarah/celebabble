@@ -7,11 +7,10 @@ var mysql = require('mysql');
 
 // Creating connection to mysql server & db
 var connection = mysql.createConnection({
-    host    :'127.0.0.1',
-    user    :'root',
-    password:'root',
-    database:'celebabble_db',
-    port    : 8889 // mysql port
+    host    :'us-cdbr-iron-east-01.cleardb.net',
+    user    :'b9c02ba6cf3ec9',
+    password:'25c3e4cc',
+    database:'heroku_7d08f208a1d0c14'
 });
 
 // Executes connection:
